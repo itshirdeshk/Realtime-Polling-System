@@ -41,7 +41,6 @@ export default function StudentPortal() {
     socket.emit("join-student", { username })
 
     const handleJoinSuccess = (data) => {
-      console.log("Successfully joined as student")
       setCurrentStudent(data.student)
     }
 

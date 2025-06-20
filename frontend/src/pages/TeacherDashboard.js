@@ -41,14 +41,6 @@ export default function TeacherDashboard() {
   }, [])
 
   useEffect(() => {
-    if (socket) {
-      console.log("[DEBUG] TeacherDashboard socket id:", socket.id);
-    } else {
-      console.log("[DEBUG] TeacherDashboard socket is null");
-    }
-  }, [socket]);
-
-  useEffect(() => {
     if (!socket) return;
 
     const handleStudentsUpdated = (studentList) => {
@@ -184,7 +176,6 @@ export default function TeacherDashboard() {
   }
 
   const refreshStudentList = () => {
-    console.log("Manually requesting student list")
     socket.emit("get-students")
   }
 
