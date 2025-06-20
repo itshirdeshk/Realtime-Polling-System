@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Users, UserCheck, BarChart3, Clock } from "lucide-react"
 
 export default function HomePage() {
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">

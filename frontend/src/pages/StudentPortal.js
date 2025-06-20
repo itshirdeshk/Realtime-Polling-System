@@ -262,10 +262,6 @@ export default function StudentPortal() {
               <h1 className="text-2xl font-bold text-gray-900">Student Portal</h1>
             </div>
             <div className="flex items-center gap-4">
-              <Badge variant="secondary" className="flex items-center gap-2">
-                <Users className="w-4 h-4" />
-                {students.length} Students Online
-              </Badge>
               <Badge variant="outline" className="flex items-center gap-2">
                 <User className="w-4 h-4" />
                 {username}

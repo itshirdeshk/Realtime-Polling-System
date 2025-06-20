@@ -18,7 +18,8 @@ export const SocketProvider = ({ children }) => {
   const [isConnected, setIsConnected] = useState(false)
 
   useEffect(() => {
-    const serverUrl = process.env.REACT_APP_SERVER_URL || "http://localhost:5000";
+    // const serverUrl = process.env.REACT_APP_SERVER_URL || "http://localhost:5000";
+    const serverUrl = "https://realtime-polling-system.onrender.com";
     const newSocket = io(serverUrl);
 
     newSocket.on("connect", () => {
