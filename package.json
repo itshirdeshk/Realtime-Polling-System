@@ -1,0 +1,15 @@
+{
+    "name": "classroom-polling-system",
+    "version": "1.0.0",
+    "description": "Real-time classroom polling system with React frontend and Express backend",
+    "scripts": {
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd server && npm run dev",
+      "client": "cd frontend && npm start",
+      "install-all": "npm install && cd server && npm install && cd ../frontend && npm install"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    }
+  }
+  
